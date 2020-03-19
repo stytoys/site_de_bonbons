@@ -1,0 +1,428 @@
+/* DOCUMENT INFORMATIONS sommaire a mettre a jour
+    -document: bonbons et sucreries
+    -version: 1.0.0
+    -author: stytoys
+*/
+
+/* COLORS
+    -default body text  black
+    -h1                 #fff               
+    -h2                 #000
+    -h3                 #000
+    -h4                 #000
+
+    -button             orange
+    -button:hover       #fff
+
+    -
+*/
+
+/* FONTS
+    -default: Dancing Script
+    -subtitle
+*/
+
+/* CSS DIRECTORY 
+    1 GLOBAL
+    2 HEADER
+    3 PRODUITS
+    4 TYPES
+    5 GALERIE
+    6 AVIS
+*/
+
+/* GLOBAL */
+
+html{
+    background-color: #fff;
+}
+
+h1, h2, h3, h4{
+    font-family: 'Dancing Script', cursive , sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    word-spacing: 1rem;
+}
+
+h1, h1 + p{
+    color: #fff;
+    text-shadow: black 0.2em 0.2em 0.3em;
+}
+h2{
+    color: #000;
+    font-size: 250%;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+h2:after{
+    display: block;
+    height: 2px;
+    background-color: orange;
+    width: 300px;
+    content: " ";
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.types-sucreries h2:after{
+    display: block;
+    height: 2px;
+    background-color: #fff;
+    width: 300px;
+    content: " ";
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+h3{
+    color: #000;
+}
+
+h4{
+    color: #000;
+    font-size: 150%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+section{
+    padding: 20px 0;
+}
+
+label{
+    font-family: 'Simonetta', Arial, sans-serif;
+}
+
+/* HEADER */
+
+header{
+    background-image: linear-gradient(0deg, rgba(255,255,255,0.1) 50%, rgba(0,0,0,0.3) 100%), url(../images/header.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.home-title{
+    position: absolute;
+    top: 30%;
+    padding-left: 10%;
+}
+.home-title h1{
+    font-size: 3em;
+}
+.home-title p{
+    font-size: 20px;
+    color: #fff;
+}
+
+/* BUTTON */
+
+.btn{
+    display: inline-block;
+    margin-right: 10px;
+    padding: 6px 20px 8px 20px;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: background-color 1s, color 1s;
+}
+.btn-full{
+    background-color: #fff;
+    color: orange;
+}
+.btn-full:hover{
+    background-color: orange;
+    color: #fff;
+    box-shadow: 6px 12px 16px 0 rgba(0,0,0,0.3), 0 17px 50px 0 rgba(0,0,0,0.2);
+}
+
+/* PRODUITS */
+
+.produits_plus{
+    margin: 30px 20px;
+    padding: 10px 20px;
+   transition: all 1s;
+}
+
+.produits-icon{
+    margin: 10px 0;
+    padding: 10px 0;
+    transition: all 1s;
+}
+
+.produits_plus:hover{
+    transform: translateX(10px);
+}
+
+.produits_plus:hover .produits-icon{
+    transform: rotate(360deg);
+}
+
+.produits-img{
+    width: 100%;
+    height: auto;
+}
+
+/* TYPES DE SUCRERIES */
+
+.types-sucreries{
+    background-color: orange;
+}
+
+.types-details{
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+.types-details img{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* GALERIE PHOTOS voir pour slides and captions avec col-md-3/col-md-6/col-md-3 */
+
+.galerie-img{
+    display: block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:300px;
+    border-radius: 10px;
+    box-shadow: 2 2 10px rgba(0,0,0,0.3);
+    margin-bottom: 30px;
+}
+
+.galerie-titre{
+    position: absolute;
+    bottom: 20px;
+    margin-left: 20px;
+}
+.galerie-titre h4{
+    color: #fff;
+}
+
+/* CLIENTS */
+
+.all-clients{
+    background-image: linear-gradient(0deg, rgba(241, 206, 88, 0.3) 0%, rgba(255,255,255,0.1) 50%),  url(../images/photo5.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.all-clients h2{
+    color: #fff;
+}
+
+.clients{
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    padding: 30px;
+    margin: 10px 0;
+    box-shadow: 2 2 10px rgba(0,0,0,0.3);
+}
+
+blockquote{
+    color: #fff;
+    padding: 5px;
+    font-style: italic;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+blockquote:before{
+    content: "\201C";
+    font-size: 300%;
+}
+
+cite{
+    display: block;
+    align-items: flex-end;
+    font-size: 0.8em;
+    margin: 20px 0;
+}
+
+cite img{
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+/* AJOUT COMMENTAIRE */
+
+ .comments{
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 2 2 10px rgba(0,0,0,0.3);
+    padding: 14px 20px 12px 40px;
+    align-items: center;
+ }
+
+textarea[name=commentaire]{
+    resize : both;
+    min-height : 30px;
+    width : 100%;
+    max-height : 18px;
+    font-size: 14px;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 10px;
+    color: #fff;
+}
+
+.btn-comments{
+    width: 200px;
+    background-color: #fff;
+    color: #000;
+    border: 2px solid orange;
+    border-radius: 10px;
+    margin: 20px 0;
+    font-family: 'Dancing Script', cursive , sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 1s;
+}
+
+.btn-comments:hover{
+    background-color: orange;
+    color: #fff;
+}
+
+/* PACKS */
+
+.pack{
+    margin: 10px 0;
+    padding: 30px;
+    background-color: antiquewhite;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+
+.pack h3{
+    color: orange;
+    font-weight: 400;
+}
+
+.pack h4{
+    font-size: 200%;
+    font-weight: 100;
+    text-align: left;
+}
+
+.pack span{
+    font-weight: 100;
+    font-size: 40%;
+    position: relative;
+    top: -10px;
+    left: 5px;
+}
+
+.pack-titre{
+    padding: 10px 15px;
+    border-bottom: 1px solid rgb(196, 190, 190);
+}
+
+.pack p{
+    font-family: 'Simonetta', Arial, sans-serif;
+}
+
+.pack-content{
+    font-family: 'Simonetta', Arial, sans-serif;
+}
+
+.pack-content ul{
+    list-style: none;
+    padding: 20px;
+    font-weight: 300;
+    line-height: 35px;
+}
+
+.pack-content ul li i{
+    font-size: 90%;
+    margin-right: 10px;
+    width: 30px;
+}
+
+.pack-signup{
+    text-align: center;
+}
+
+.btn-pack{
+    background-color: orange;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.btn-pack:hover{
+    border-color: #000;
+    transition: all 1s;
+}
+
+/* CONTACT ajuster les marges */
+
+.phone i{
+    margin-right: 10px;
+}
+
+.adress i{
+    margin-right: 10px;
+}
+
+.contact-form{
+    margin-right: 5px;
+    margin-bottom: 30px;
+}
+
+.contact-message{
+    width: 100%;
+}
+ 
+.btn-contact{
+    background-color: orange;
+    color: #fff;
+    margin-bottom: 20px;
+    transition: all 1s;
+}
+
+/* MAP */
+
+.iframe-rwd  {
+position: relative;
+margin-top: 30px;
+padding-bottom: 80%;
+padding-top: 30%;
+height: 0 auto;
+overflow: hidden;
+}
+
+.iframe-rwd iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #000;
+    color: #fff;
+    height: 60px;
+    padding: 20px 20px;
+}
+
+.copyright{
+    text-align: center;
+}
+
+.copyright a{
+    color: #fff;
+    font-size: 90%;
+}
+
